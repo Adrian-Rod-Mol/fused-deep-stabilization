@@ -7,3 +7,7 @@ _ext/
 *.jpg
 *.tar
 log/*
+log
+test
+venv
+dvs/video
