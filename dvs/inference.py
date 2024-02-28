@@ -192,6 +192,7 @@ def main(args = None):
     USE_CUDA = cf['data']["use_cuda"]
 
     log_file = open(os.path.join(cf["data"]["log"], cf['data']['exp']+'_test.log'), 'w+')
+    # Custom class that change the print() function file to a custom file
     printer = Printer(sys.stdout, log_file).open()
 
     data_name = sorted(os.listdir(dir_path))
